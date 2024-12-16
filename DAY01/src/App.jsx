@@ -2,8 +2,8 @@ import React from 'react'
 
 const App = () => {
     return (
-        <div class=" bg-indigo-600 text-lg font-medium " >app</div>
+        <div class=" bg-indigo-600 text-lg font- " >app</div>
     )
 }
 
-export default App
+export default App 
