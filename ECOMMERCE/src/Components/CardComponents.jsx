@@ -19,7 +19,7 @@ const CardComponent = ({ contacts }) => {
             {contacts.map((product) => (
                 <div
                     key={product.id}
-                    className="w-[22rem] bg-gradient-to-r from-purple-500 to-teal-400 shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 text-white"
+                    className="w-[22rem] bg-gradient-to-r from-purple-500 to-teal-400 shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 transform text-white"
                 >
                     <img
                         className="w-full h-48 object-cover"
