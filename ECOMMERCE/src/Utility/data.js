@@ -3,7 +3,7 @@ const products = [
         id: 1,
         name: "Wireless Headphones",
         productdesc: "Noise-cancelling over-ear headphones with deep bass.",
-        price: "$99.99",
+        price: "1599 RS",
         rating: 4.5,
         image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-qWKjwM7P0OvQ6-EX6ZcSLoAXq2KZAh-zIojahEYQP7xYgzURnZAjJQCG2e_yawQ5d3iDdG61by_oO0tqyxcwXlvSb9xq5AzUZB4HDbx3QK3ly6MgGT1a1Q",
     },
@@ -11,7 +11,7 @@ const products = [
         id: 2,
         name: "Smartphone",
         productdesc: "Sleek and powerful with a stunning display.",
-        price: "$699.99",
+        price: "89,999 RS",
         rating: 4.7,
         image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSJK2uTs4XaCkxEyZ4GBTv23xOmFtth3EBz7doMhS9bYLnibH-Qn6ahSrkSRW_sN4J7guu1o8AMzSbx9KG2xiNjVOc0i8oFIFmVNrzk2-iIqzcWWxOyD3js",
     },
@@ -63,6 +63,22 @@ const products = [
         rating: 4.1,
         image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
     },
+    {
+        id: 9,
+        name: "Wireless Keyboard",
+        productdesc: "Ergonomic and lightweight keyboard for daily use.",
+        price: "$39.99",
+        rating: 4.1,
+        image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
+    },
+    {
+        id: 10,
+        name: "Wireless Keyboard",
+        productdesc: "Ergonomic and lightweight keyboard for daily use.",
+        price: "$39.99",
+        rating: 4.1,
+        image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
+    }
 ];
 
 export default products;
