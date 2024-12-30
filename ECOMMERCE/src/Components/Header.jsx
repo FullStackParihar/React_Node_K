@@ -8,19 +8,19 @@ const Header = () => {
 
       <nav>
         <ul className="flex gap-6">
-          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 cursor-pointer">
+          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 hover:animate-pulse cursor-pointer ">
             Home
           </li>
-          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 cursor-pointer">
+          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 hover:animate-pulse cursor-pointer ">
             Menu
           </li>
-          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 cursor-pointer">
+          <li className="bg-white text-purple-500 px-5 py-3 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 hover:animate-pulse cursor-pointer ">
             My Account
           </li>
-          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 cursor-pointer">
+          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 hover:animate-pulse cursor-pointer ">
             Settings
           </li>
-          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 cursor-pointer">
+          <li className="bg-white text-purple-500 px-4 py-2 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300 hover:animate-pulse cursor-pointer ">
             About
           </li>
         </ul>
