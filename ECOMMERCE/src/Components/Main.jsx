@@ -1,26 +1,32 @@
 import CardComponent from "./CardComponents"
 import products from "../Utility/data"
+import Header from './Header';
+import Slider from "./Slider";
 const Main = () => {
   return (
     <>
       <div>
         <div>
-          <ul className="flex justify-center items-center gap-3 h-10">
-            <li className="text-[1rem]">Abcdef</li>
-            <li className="text-[1.4rem]">Abcdef</li>
-            <li className="text-[1.7rem]">Abcdef</li>
-            <li className="text-[2rem]">Abcdef</li>
-            <li className="text-[1.7rem]">Abcdef</li>
-            <li className="text-[1.4rem]">Abcdef</li>
-            <li className="text-[1rem]">Abcdef</li>
+          <ul className="flex justify-center items-center font-serif gap-4 h-12">
+            <li className="text-[1rem]">Headphone</li>
+            <li className="text-[1.4rem]">Mobile</li>
+            <li className="text-[1.7rem]">Laptop</li>
+            <li className="text-[2rem]">Home</li>
+            <li className="text-[1.7rem]">Camera</li>
+            <li className="text-[1.4rem]">Assesories</li>
+            <li className="text-[1rem]">Watch</li>
           </ul>
         </div>
         <div>
-          <img className=" h-fit w-full " src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/d9290fb51138d286.png?q=20" alt="" /></div>
+        <Slider/>
+        </div>
       </div>
-      <div className="flex flex-wrap justify-between px-18 items-center min-h-screen bg-gray-100 p-4 ">
-        <h1 className="text-4xl underline text-gray-800 mb-2">Electronic Products</h1>
-        <h2 className="text-4xl underline text-gray-800 mb-2">View More....</h2>
+      <div className="flex flex-wrap justify-between px-18 items-center bg-gray-100 p-4 ">
+        <a href="post" className="text-xl text-blue-600 hover:text-blue-400 hover:animate-pulse font-serif mb-0">Electronic Products</a>
+        <a href="post" className="text-xl text-blue-600 hover:text-blue-400 hover:animate-pulse font-serif mb-0">View More....</a>
+      </div>
+      <hr className="mb-8"></hr>
+      <div>
         <CardComponent contacts={products} />
       </div>
     </>)

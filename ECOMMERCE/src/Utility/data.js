@@ -5,15 +5,15 @@ const products = [
         productdesc: "Noise-cancelling over-ear headphones with deep bass.",
         price: "1599 RS",
         rating: 4.5,
-        image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS-qWKjwM7P0OvQ6-EX6ZcSLoAXq2KZAh-zIojahEYQP7xYgzURnZAjJQCG2e_yawQ5d3iDdG61by_oO0tqyxcwXlvSb9xq5AzUZB4HDbx3QK3ly6MgGT1a1Q",
+        image: "https://m.media-amazon.com/images/I/61LXdoeSvbL._SL1500_.jpg",
     },
     {
         id: 2,
         name: "Smartphone",
-        productdesc: "Sleek and powerful with a stunning display.",
+        productdesc: "Sleek and powerful with a stunning display and looks.",
         price: "89,999 RS",
         rating: 4.7,
-        image: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSJK2uTs4XaCkxEyZ4GBTv23xOmFtth3EBz7doMhS9bYLnibH-Qn6ahSrkSRW_sN4J7guu1o8AMzSbx9KG2xiNjVOc0i8oFIFmVNrzk2-iIqzcWWxOyD3js",
+        image: "https://m.media-amazon.com/images/I/71CSc3M2AGL._SX679_.jpg",
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const products = [
         productdesc: "Track your fitness and stay connected on the go.",
         price: "$199.99",
         rating: 4.3,
-        image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRuIKIb4FIkjrsgieuCmDIZPql_XwxM-U0TudGUfkp-DR5bXe9cyJSbItZzjNUDlcNYT65vpwg1O_PcslG9uWuRzMGcvNiTFc9grLk6gvVEUmPT6ZpXk_zlUg&usqp=CAE",
+        image: "https://m.media-amazon.com/images/I/61gPbgGG0-L._SX679_.jpg",
     },
     {
         id: 5,

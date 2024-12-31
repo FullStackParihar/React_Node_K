@@ -15,35 +15,41 @@ const CardComponent = ({ contacts }) => {
     };
 
     return (
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex flex-wrap justify-center gap-6 px-4">
             {contacts.map((product) => (
                 <div
                     key={product.id}
-                    className="w-[22rem] bg-gradient-to-r from-purple-500 to-teal-400 shadow-lg rounded-2xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 transform text-white"
+                    className="w-[20rem] bg-white shadow-md rounded-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
                 >
                     <img
-                        className="w-full h-48 object-cover"
+                        className="w-full h-44 object-contain"
                         src={product.image}
                         alt={product.name}
                     />
-                    <div className="p-6">
-                        <h2 className="text-2xl font-bold mb-2">{product.name}</h2>
-                        <p className="text-lg mb-2">{product.productdesc}</p>
+                    <div className="p-4">
+                        <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                            {product.name}
+                        </h2>
+                        <p className="text-sm text-gray-600 mb-3">
+                            {product.productdesc}
+                        </p>
                         <div className="flex justify-between items-center mb-4">
-                            <span className="text-xl font-semibold">{product.price}</span>
-                            <span className="bg-yellow-400 text-gray-800 py-1 px-3 rounded-full text-sm font-medium">
+                            <span className="text-lg font-bold text-gray-900">
+                                {product.price}
+                            </span>
+                            <span className="bg-green-100 text-green-700 py-1 px-3 rounded-full text-sm font-medium">
                                 ⭐ {product.rating}
                             </span>
                         </div>
-                        <div className="flex justify-between items-center">
+                        <div className="flex gap-3">
                             <button
-                                className="bg-white text-purple-500 py-2 px-4 rounded-full shadow-md hover:bg-purple-700 hover:text-white transition-all duration-300"
+                                className="flex-1 bg-blue-500 text-white py-2 rounded-lg text-center hover:bg-blue-600 transition-colors duration-300"
                                 onClick={() => handleAddToCart(product)}
                             >
                                 Add to Cart
                             </button>
                             <button
-                                className="bg-white text-teal-500 py-2 px-4 rounded-full shadow-md hover:bg-teal-700 hover:text-white transition-all duration-300"
+                                className="flex-1 bg-gray-200 text-gray-800 py-2 rounded-lg text-center hover:bg-gray-300 transition-colors duration-300"
                                 onClick={() => handleAddToWishlist(product)}
                             >
                                 Add to Wishlist
