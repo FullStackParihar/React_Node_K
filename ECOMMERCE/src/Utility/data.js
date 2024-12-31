@@ -62,22 +62,6 @@ const products = [
         price: "$39.99",
         rating: 4.1,
         image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
-    },
-    {
-        id: 9,
-        name: "Wireless Keyboard",
-        productdesc: "Ergonomic and lightweight keyboard for daily use.",
-        price: "$39.99",
-        rating: 4.1,
-        image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
-    },
-    {
-        id: 10,
-        name: "Wireless Keyboard",
-        productdesc: "Ergonomic and lightweight keyboard for daily use.",
-        price: "$39.99",
-        rating: 4.1,
-        image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
     }
 ];
 

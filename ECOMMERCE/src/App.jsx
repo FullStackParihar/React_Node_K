@@ -7,9 +7,10 @@ const App = () => {
      <>
       <div><Header/></div>
       <div><Main/>
+       
       
       </div>
-      
+      <div><Footer/> </div>
      </>
   )
 }

@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <div className="bg-purple-700 text-lg font-semibold flex justify-between items-center h-20 px-8 shadow-md">
             <div className="text-white text-4xl font-extrabold tracking-wide cursor-pointer">
-                @eStore
+                eStore
             </div>
 
             <nav>
@@ -22,7 +22,7 @@ const Header = () => {
 
             <div className="flex items-center gap-3 text-white text-2xl cursor-pointer">
                 <input
-                    className="w-[12rem] bg-gray-100 p-2 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-teal-300"
+                    className="w-[14rem] bg-gray-100 py-1 px-5 rounded-full text-black focus:outline-none focus:ring-2 focus:ring-teal-300"
                     type="text"
                     placeholder="Search..."
                 />

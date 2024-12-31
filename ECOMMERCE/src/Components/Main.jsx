@@ -42,9 +42,9 @@ const Main = () => {
       <div className="px-8 mt-10">
         <CardComponent contacts={products} />
       </div>
-<hr className='mt-10'></hr>
  
-      <h3 className="text-lg ml-6 p-4 w-48 rounded bg-purple-500 font-bold text-gray-700 mb-4">Featured Products</h3>
+ 
+      <h3 className="text-lg mt-10 ml-6 p-2 w-44 rounded bg-purple-500 font-bold text-white-700 mb-4">Featured Products</h3>
       <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
          
         <div className="flex flex-wrap justify-start gap-6">
