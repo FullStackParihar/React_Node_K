@@ -1,55 +1,54 @@
 const categories = [
     {
-      id: 1,
-      name: 'Fruits',
-      items: ['Apple', 'Banana', 'Orange'],
+        id: 1,
+        name: 'Fruits',
+        items: ['Apple', 'Banana', 'Grapes'],
     },
     {
-      id: 2,
-      name: 'Vegetables',
-      items: ['Carrot', 'Broccoli', 'Spinach'],
+        id: 2,
+        name: 'Vegetables',
+        items: ['Carrot', 'Potato', 'Cucumber'],
     },
     {
-      id: 3,
-      name: 'Vegetables',
-      items: ['Carrot', 'Broccoli', 'Spinach'],
-      
+        id: 3,
+        name: 'Dairy',
+        items: ['Milk', 'Cheese', 'Butter'],
     },
     {
-      id: 4,
-      name: 'fruit',
-      items: ['apple', 'Broccoli', 'banana'],
+        id: 4,
+        name: 'Snacks',
+        items: ['Chips', 'Cookies', 'Popcorn'],
     },
     {
-      id: 5,
-      name: 'Vegetables',
-      items: ['Carrot', 'Broccoli', 'Spinach'],
+        id: 5,
+        name: 'Beverages',
+        items: ['Tea', 'Coffee', 'Juice'],
     },
     {
-      id: 6,
-      name: 'fruit',
-      items: ['Carrot', 'apple', 'banana'],
+        id: 6,
+        name: 'Electronics',
+        items: ['Mobile', 'Laptop', 'Tablet'],
     },
     {
-      id: 7,
-      name: 'fruit',
-      items: ['Carrot', 'apple', 'banana'],
+        id: 7,
+        name: 'Books',
+        items: ['Fiction', 'Non-Fiction', 'Comics'],
     },
     {
-      id: 8,
-      name: 'fruit',
-      items: ['Carrot', 'apple', 'banana'],
+        id: 8,
+        name: 'Clothing',
+        items: ['Shirt', 'Jeans', 'Jacket'],
     },
     {
-      id: 9,
-      name: 'fruit',
-      items: ['Carrot', 'apple', 'banana'],
+        id: 9,
+        name: 'Stationery',
+        items: ['Pen', 'Notebook', 'Marker'],
     },
     {
-      id: 10,
-      name: 'fruit',
-      items: ['Carrot', 'apple', 'banana'],
+        id: 10,
+        name: 'Toys',
+        items: ['Doll', 'Puzzle', 'Car'],
     },
-  ]
-  
-  export default categories;
+];
+
+export default categories;

@@ -17,10 +17,10 @@ const Main = () => {
         ))}
       </ul>
 
-      
+
       <Slider />
 
-      
+
       <div className="flex justify-between items-center px-8 bg-gray-200 py-4 shadow-md">
         <a
           href="post"
@@ -36,17 +36,17 @@ const Main = () => {
         </a>
       </div>
 
-     
 
- 
+
+
       <div className="px-8 mt-10">
         <CardComponent contacts={products} />
       </div>
- 
- 
+
+
       <h3 className="text-lg mt-10 ml-6 p-2 w-44 rounded bg-purple-500 font-bold text-white-700 mb-4">Featured Products</h3>
       <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
-         
+
         <div className="flex flex-wrap justify-start gap-6">
           {products.slice(0, 6).map((product, index) => (
             <div
