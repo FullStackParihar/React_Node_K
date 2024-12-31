@@ -1,35 +1,77 @@
-import CardComponent from "./CardComponents"
-import products from "../Utility/data"
-import Header from './Header';
-import Slider from "./Slider";
+import CardComponent from './CardComponents';
+import products from '../Utility/data';
+import Slider from './Slider';
+
 const Main = () => {
   return (
     <>
-      <div>
-        <div>
-          <ul className="flex justify-center items-center font-serif gap-4 h-12">
-            <li className="text-[1rem]">Headphone</li>
-            <li className="text-[1.4rem]">Mobile</li>
-            <li className="text-[1.7rem]">Laptop</li>
-            <li className="text-[2rem]">Home</li>
-            <li className="text-[1.7rem]">Camera</li>
-            <li className="text-[1.4rem]">Assesories</li>
-            <li className="text-[1rem]">Watch</li>
-          </ul>
-        </div>
-        <div>
-        <Slider/>
-        </div>
+      {/* Navigation Menu */}
+      <ul className="flex justify-center items-center gap-6 font-serif h-12 text-indigo-700 bg-gray-100 shadow-md">
+        {['Headphone', 'Mobile', 'Laptop', 'Home', 'Camera', 'Accessories', 'Watch'].map((item, index) => (
+          <li
+            key={index}
+            className="text-lg hover:text-indigo-500 transition-transform duration-200 transform hover:scale-110 cursor-pointer"
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+
+      
+      <Slider />
+
+      
+      <div className="flex justify-between items-center px-8 bg-gray-200 py-4 shadow-md">
+        <a
+          href="post"
+          className="text-xl text-blue-800 hover:text-blue-600 hover:underline font-serif transition"
+        >
+          Electronic Products
+        </a>
+        <a
+          href="post"
+          className="text-xl text-blue-800 hover:text-blue-600 hover:underline font-serif transition"
+        >
+          View More...
+        </a>
       </div>
-      <div className="flex flex-wrap justify-between px-18 items-center bg-gray-100 p-4 ">
-        <a href="post" className="text-xl text-blue-600 hover:text-blue-400 hover:animate-pulse font-serif mb-0">Electronic Products</a>
-        <a href="post" className="text-xl text-blue-600 hover:text-blue-400 hover:animate-pulse font-serif mb-0">View More....</a>
-      </div>
-      <hr className="mb-8"></hr>
-      <div>
+
+     
+
+ 
+      <div className="px-8 mt-10">
         <CardComponent contacts={products} />
       </div>
-    </>)
-}
+<hr className='mt-10'></hr>
+ 
+      <h3 className="text-lg ml-6 p-4 w-48 rounded bg-purple-500 font-bold text-gray-700 mb-4">Featured Products</h3>
+      <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
+         
+        <div className="flex flex-wrap justify-start gap-6">
+          {products.slice(0, 6).map((product, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-48 bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-32 object-cover rounded-t-md"
+              />
+              <h4 className="text-base font-medium mt-2 text-gray-800">{product.name}</h4>
+              <p className="text-sm text-gray-600 mt-1">Price: ${product.price}</p>
+              <a
+                href="#"
+                className="text-indigo-600 text-sm font-semibold mt-2 inline-block hover:underline"
+              >
+                View Details
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Main
+export default Main;
