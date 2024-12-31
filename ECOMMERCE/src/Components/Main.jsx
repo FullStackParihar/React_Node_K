@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <>
       {/* Navigation Menu */}
-      <ul className="flex justify-center items-center gap-6 font-serif h-12 text-indigo-700 bg-gray-100 shadow-md">
+      <ul className="flex flex-wrap justify-center items-center gap-6 font-serif h-12 text-indigo-700 bg-gray-100 shadow-md">
         {['Headphone', 'Mobile', 'Laptop', 'Home', 'Camera', 'Accessories', 'Watch'].map((item, index) => (
           <li
             key={index}
@@ -47,7 +47,7 @@ const Main = () => {
       <h3 className="text-lg mt-10 ml-6 p-2 w-44 rounded bg-purple-500 font-bold text-white-700 mb-4">Featured Products</h3>
       <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
 
-        <div className="flex flex-wrap justify-start gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {products.slice(0, 6).map((product, index) => (
             <div
               key={index}

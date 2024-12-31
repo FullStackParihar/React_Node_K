@@ -2,12 +2,12 @@ const Footer = () => {
     return (
       <footer className="bg-gray-800 text-gray-300 py-6">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-6">
-          {/* Brand Name */}
+ 
           <div className="text-lg font-serif text-white">
             <span className="text-indigo-500 font-bold">e</span>Store
           </div>
   
-          {/* Navigation Links */}
+ 
           <ul className="flex gap-4 text-sm">
             {['About Us', 'Contact', 'Privacy Policy', 'Terms of Service'].map((item, index) => (
               <li key={index} className="hover:text-indigo-400 transition">
@@ -16,7 +16,7 @@ const Footer = () => {
             ))}
           </ul>
   
-          {/* Social Media Links */}
+ 
           <div className="flex gap-4 text-lg">
             <a
               href="https://facebook.com"
