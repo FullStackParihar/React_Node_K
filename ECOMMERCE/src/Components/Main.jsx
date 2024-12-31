@@ -59,7 +59,7 @@ const Main = () => {
                 className="w-full h-32 object-cover rounded-t-md"
               />
               <h4 className="text-base font-medium mt-2 text-gray-800">{product.name}</h4>
-              <p className="text-sm text-gray-600 mt-1">Price: ${product.price}</p>
+              <p className="text-sm text-gray-600 mt-1">Price: {product.price}</p>
               <a
                 href="#"
                 className="text-indigo-600 text-sm font-semibold mt-2 inline-block hover:underline"
