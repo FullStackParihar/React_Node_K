@@ -6,6 +6,8 @@ const products = [
         price: "1599 RS",
         rating: 4.5,
         image: "https://m.media-amazon.com/images/I/61LXdoeSvbL._SL1500_.jpg",
+        isWishlist:false,
+        isCart:false,
     },
     {
         id: 2,
@@ -14,6 +16,8 @@ const products = [
         price: "89,999 RS",
         rating: 4.7,
         image: "https://m.media-amazon.com/images/I/71CSc3M2AGL._SX679_.jpg",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 3,
@@ -22,6 +26,8 @@ const products = [
         price: "45,999 RS",
         rating: 4.8,
         image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQa1AEcjRM1XFSkZ5r6b6gD7y16P9mb_liE8K63cb92_5m-oZvtVM_5ebmIFT3j4ZwCRDrNGcNQajY7tQacsxM0ljIGchZnFYmHRnhYV1B5xRQb9kW1kQ0I",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 4,
@@ -30,6 +36,8 @@ const products = [
         price: "4,999 RS",
         rating: 4.3,
         image: "https://m.media-amazon.com/images/I/61gPbgGG0-L._SX679_.jpg",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 5,
@@ -38,6 +46,8 @@ const products = [
         price: "1549 RS",
         rating: 4.6,
         image: "https://m.media-amazon.com/images/I/81fkcBjZndL._SL1500_.jpg",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 6,
@@ -46,6 +56,8 @@ const products = [
         price: "40,999 RS",
         rating: 4.4,
         image: "https://m.media-amazon.com/images/I/51JwcRWiefL._SL1080_.jpg",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 7,
@@ -54,6 +66,8 @@ const products = [
         price: "2000 RS",
         rating: 4.2,
         image: "https://m.media-amazon.com/images/I/313oLK-s80L.jpg",
+        isWishlist:false,
+        isCart:false
     },
     {
         id: 8,
@@ -62,6 +76,8 @@ const products = [
         price: "1299 RS",
         rating: 4.1,
         image: "https://m.media-amazon.com/images/I/81N2AnA91nL._SL1500_.jpg",
+        isWishlist:false,
+        isCart:false
     }
 ];
 
