@@ -1,6 +1,10 @@
 import CardComponent from './CardComponents';
 import products from '../Utility/data';
 import Slider from './Slider';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Form from './Form';
 
 const Main = () => {
   return (
@@ -21,21 +25,33 @@ const Main = () => {
       <Slider />
 
 
-      <div className="flex justify-between items-center px-8 bg-gray-200 py-4 shadow-md">
+      <div className="flex justify-between items-center px-8 bg-gradient-to-r from-purple-500 to-purple-700 py-4 shadow-md">
         <a
           href="post"
-          className="text-xl text-blue-800 hover:text-blue-600 hover:underline font-serif transition"
+          className="text-xl text-white bold hover:text-blue-600 hover:underline font-serif transition"
         >
           Electronic Products
         </a>
         <a
           href="post"
-          className="text-xl text-blue-800 hover:text-blue-600 hover:underline font-serif transition"
+          className="text-xl text-white bold hover:text-blue-600 hover:underline font-serif transition"
         >
           View More...
         </a>
       </div>
 
+
+      <div className=" fixed top-50% right-0 flex flex-col h-28 z-50  ">
+        <button className="bg-gradient-to-r from-purple-500 to-purple-700 text-white text-m py-2 px-4 rounded-full border-2 flex items-center gap-2">
+          <FontAwesomeIcon icon={faHeart} className="text-red-500" />
+          Cart
+        </button>
+        <button className="bg-white text-purple text-m py-2 px-4 rounded-full border-2 flex items-center gap-2">
+          <FontAwesomeIcon icon={faShoppingCart} className="text-purple" />
+          Cart
+        </button>
+
+      </div>
 
 
 
@@ -43,7 +59,8 @@ const Main = () => {
         <CardComponent contacts={products} />
       </div>
 
-      <h3 className="text-lg mt-10 ml-6 p-2 w-44 rounded bg-purple-500 font-bold text-white-700 mb-4">Featured Products</h3>
+
+      <h3 className="text-lg p-2 px-4 bg-gradient-to-r from-purple-500 to-purple-700 font-bold text-white mb-4">Featured Products</h3>
       <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
 
         <div className="flex flex-wrap justify-center gap-6 ">
@@ -55,7 +72,7 @@ const Main = () => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-32 object-100% rounded-t-md"
+                className="w-full h-36 object-100% rounded-t-md"
               />
               <h4 className="text-base font-medium mt-2 text-gray-800">{product.name}</h4>
               <p className="text-sm text-gray-600 mt-1">Price: {product.price}</p>
@@ -65,10 +82,14 @@ const Main = () => {
               >
                 View Details
               </a>
+
             </div>
+
           ))}
         </div>
+         
       </div>
+      <Form/>
     </>
   );
 };
