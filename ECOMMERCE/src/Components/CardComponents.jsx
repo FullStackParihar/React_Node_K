@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const CardComponent = ({ contacts }) => {
     let cart = [];
     let wishlist = [];
@@ -8,44 +7,56 @@ const CardComponent = ({ contacts }) => {
     const [productList, setProductList] = useState(contacts);
     const [snackbar, setSnackbar] = useState({ show: false, message: "", success: true }); // Define snackbar state
 
-
     const showSnackbar = (success, message) => {
         setSnackbar({ show: true, message, success });
         setTimeout(() => {
             setSnackbar({ show: false, message: "", success: true });
-        }, 3000); // Snackbar will disappear after 3 seconds
+        }, 3000);
     };
 
     const handleAddToCart = (product) => {
-
         if (wishlist.some((item) => item.id === product.id)) {
             console.log("Product Already added to cart !", cart);
+            showSnackbar(false, "Product Already added to Cart ");
         } else {
             product.isCart = true;
             cart.push(product);
             console.log("Added to cart:", cart);
+            console.log("Productssss:", productList);
+            setProductList([...productList]); // Trigger re-render
+            showSnackbar(true, "Added to Cart:");
         }
-
     };
 
     const handleAddToWishlist = (product) => {
         if (wishlist.some((item) => item.id === product.id)) {
             console.log("Product Already added to wishlist !", wishlist);
-            showSnackbar(false, "Product Already added to wishlist ")
-
+            showSnackbar(false, "Product Already added to wishlist ");
         } else {
             product.isWishlist = true;
             wishlist.push(product);
             console.log("Added to wishlist:", wishlist);
             console.log("Productssss:", productList);
             setProductList([...productList]); // Trigger re-render
-            showSnackbar(true, "Added to wishlist:")
-
-
+            showSnackbar(true, "Added to wishlist:");
         }
-
     };
 
+    const handleRemoveFromCart = (product) => {
+        if (productList.some((item) => item.id === product.id)) {
+            product.isCart = false;
+            cart.pop(product);
+            console.log("Removed from Cart:", cart);
+            console.log("Productssss:", productList);
+            setProductList([...productList]); // Trigger re-render
+            showSnackbar(true, "Removed from Cart");
+        } else {
+            console.log("Product Already Removed !", wishlist);
+            showSnackbar(false, "Product Already Removed");
+        }
+    };
+
+    // Move `handleRemoveFromWishlist` outside `handleRemoveFromCart`
     const handleRemoveFromWishlist = (product) => {
         if (productList.some((item) => item.id === product.id)) {
             product.isWishlist = false;
@@ -53,20 +64,16 @@ const CardComponent = ({ contacts }) => {
             console.log("Removed from wishlist:", wishlist);
             console.log("Productssss:", productList);
             setProductList([...productList]); // Trigger re-render
-
-            showSnackbar(true, "Removed from wishlist")
-
+            showSnackbar(true, "Removed from wishlist");
         } else {
             console.log("Product Already Removed !", wishlist);
-            showSnackbar(false, "Product Already Removed ")
+            showSnackbar(false, "Product Already Removed");
         }
-
     };
 
     return (
         <div className="relative">
             <div className="flex flex-wrap justify-center gap-6 px-4">
-                {/* {productList.filter((product) => !(product.isWishlist)).map((product) => ( */}
                 {productList.map((product) => (
                     <div
                         key={product.id}
@@ -95,19 +102,27 @@ const CardComponent = ({ contacts }) => {
                             <div className="flex gap-3">
                                 <button
                                     className="flex-1 bg-gradient-to-r from-purple-500 to-purple-700 text-white py-2 rounded-lg text-center hover:from-purple-700 hover:to-purple-500 transition-all duration-300"
-                                    onClick={() => handleAddToCart(product)}
+                                    onClick={() => {
+                                        product.isCart === true
+                                            ? handleRemoveFromCart(product)
+                                            : handleAddToCart(product);
+                                    }}
                                 >
-                                    Add to Cart
+                                    {product.isCart === true
+                                        ? "Remove from Cart"
+                                        : "Add to Cart"}
                                 </button>
                                 <button
                                     className="flex-1 bg-gradient-to-r from-gray-300 to-gray-400 text-gray-900 py-2 rounded-lg text-center hover:from-gray-400 hover:to-gray-300 transition-all duration-300"
                                     onClick={() => {
-                                        product.isWishlist == true ?
-                                            handleRemoveFromWishlist(product) : handleAddToWishlist(product)
-                                    }
-                                    }
+                                        product.isWishlist === true
+                                            ? handleRemoveFromWishlist(product)
+                                            : handleAddToWishlist(product);
+                                    }}
                                 >
-                                    {product.isWishlist == true ? "Remove from Wishlist" : "Add to Wishlist"}
+                                    {product.isWishlist === true
+                                        ? "Remove from Wishlist"
+                                        : "Add to Wishlist"}
                                 </button>
                             </div>
                         </div>
@@ -123,7 +138,6 @@ const CardComponent = ({ contacts }) => {
                         {snackbar.message}
                     </div>
                 )}
-
             </div>
         </div>
     );
