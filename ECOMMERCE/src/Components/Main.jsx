@@ -28,27 +28,27 @@ const Main = () => {
       <div className="flex justify-between items-center px-8 bg-gradient-to-r from-purple-500 to-purple-700 py-4 shadow-md">
         <a
           href="post"
-          className="text-xl text-white bold hover:text-blue-600 hover:underline font-serif transition"
+          className="text-xl text-white font-bold hover:text-blue-600 hover:underline font-serif transition"
         >
           Electronic Products
         </a>
         <a
           href="post"
-          className="text-xl text-white bold hover:text-blue-600 hover:underline font-serif transition"
+          className="text-xl text-white font-bold hover:text-blue-600 hover:underline font-serif transition"
         >
           View More...
         </a>
       </div>
 
 
-      <div className=" fixed top-50% right-0 flex flex-col h-28 z-50  ">
-        <button className="bg-gradient-to-r from-purple-500 to-purple-700 text-white text-m py-2 px-4 rounded-full border-2 flex items-center gap-2">
+      <div className=" fixed top-50% right-0 flex flex-col h-36 z-50  ">
+        <button className="bg-gradient-to-r from-purple-500 to-purple-700 text-white text-m py-4 px-6 rounded-full border-2 flex items-center gap-2">
           <FontAwesomeIcon icon={faHeart} className="text-red-500" />
-          Cart
+          
         </button>
-        <button className="bg-white text-purple text-m py-2 px-4 rounded-full border-2 flex items-center gap-2">
+        <button className="bg-white text-purple text-m py-4 px-6 rounded-full border-2 flex items-center gap-2">
           <FontAwesomeIcon icon={faShoppingCart} className="text-purple" />
-          Cart
+          
         </button>
 
       </div>
