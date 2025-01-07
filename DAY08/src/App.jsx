@@ -47,7 +47,7 @@ const ShoppingCart = () => {
                                         _
                                     </button>
                                     <input className="mx-2 border text-center w-8" type="text" value={item.quantity} readOnly />
-                                    <button onClick={() => handleQuantityChange(item.id, 1)}>
+                                    <button className='mb-2' onClick={() => handleQuantityChange(item.id, 1)}>
                                         +
                                     </button>
                                 </div>
