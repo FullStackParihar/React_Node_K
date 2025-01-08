@@ -25,7 +25,7 @@ const Main = () => {
       <Slider />
 
 
-      <div className="flex justify-between items-center px-8 bg-gradient-to-r from-purple-500 to-purple-700 py-4 shadow-md">
+      <div className="flex justify-between items-center px-8 bg-gradient-to-r from-purple-500 to-purple-700 py-2 shadow-md">
         <a
           href="post"
           className="text-xl text-white font-bold hover:text-blue-600 hover:underline font-serif transition"

@@ -129,7 +129,7 @@ const CardComponent = ({ contacts }) => {
                     </div>
                 ))}
 
-                {/* Snackbar */}
+                 
                 {snackbar.show && (
                     <div
                         className={`fixed top-4 right-4 px-8 py-4 text-xl rounded-lg shadow-lg text-white transition-all animate-bounce duration-300 ease-in-out transform ${
