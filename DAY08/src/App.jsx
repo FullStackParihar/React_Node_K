@@ -8,9 +8,7 @@ const ShoppingCart = () => {
     ]);
 
     const handleQuantityChange = (id, index) => {
-        setCart(cart.map(item =>
-            item.id === id ? { ...item, quantity: Math.max(0, item.quantity + index) } : item
-        ));
+
     };
 
     const totalCost = cart.reduce((total, item) => total + item.price * item.quantity, 0);
