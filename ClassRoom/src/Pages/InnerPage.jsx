@@ -54,8 +54,6 @@ const InnerPage = () => {
                     />
                 </div>
 
-
-
                 <div className="flex flex ml-36 md:grid-cols-4 gap-6 mt-6">
                     <div>
                         <div className="bg-white rounded-lg w-44 shadow-md p-4 col-span-1">
