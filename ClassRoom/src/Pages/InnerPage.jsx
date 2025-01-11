@@ -93,7 +93,6 @@ const InnerPage = () => {
                             </div>
                         </div>
 
-
                         <div className="flex items-start space-x-4">
                             <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
                                 <i className="fas fa-tasks text-gray-600"></i>
