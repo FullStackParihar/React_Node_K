@@ -11,30 +11,30 @@ const SideBar = () => {
 
     return (
 
-        <div className='flex flex-col gap-12 justify-center items-center ' >
+        <div className={`flex flex-col justify-center items-center z-1 text-black transition-all duration-300 ease-in-out ${
+            toggle ? 'w-18': 'w-34'
+        }`} >
             {(toggle) ?
-                <>
-                    <div> <FontAwesomeIcon icon={faHouse} /></div>
-                    <div><FontAwesomeIcon icon={faGear} />
+                <div className='h-5'>
+                    <div> <FontAwesomeIcon className='h-5 py-4' icon={faHouse} /></div>
+                    <div><FontAwesomeIcon className='h-5 py-4' icon={faGear} />
                     </div>
-                    <div><FontAwesomeIcon icon={faCalendar} />
+                    <div><FontAwesomeIcon className='h-5 py-4' icon={faCalendar} />
                     </div>
-                    <div><FontAwesomeIcon icon={faGraduationCap} />
+                    <div><FontAwesomeIcon className='h-5 py-4' icon={faGraduationCap} />
                     </div>
-                    <div><FontAwesomeIcon icon={faGraduationCap} />
+                    <div><FontAwesomeIcon className='h-5 py-4' icon={faBoxArchive} />
                     </div>
-                    <div><FontAwesomeIcon icon={faBoxArchive} />
+                </div> : <div className='flex flex-col gap-12 justify-center items-center '>
+                    <div className=''> <FontAwesomeIcon className='h-5 pr-4' icon={faHouse} />Home
                     </div>
-                </> : <div className='flex flex-col gap-12 justify-center items-center '>
-                    <div> <FontAwesomeIcon icon={faHouse} />Home
+                    <div><FontAwesomeIcon className='h-5 pr-4' icon={faGear} />Settings
                     </div>
-                    <div><FontAwesomeIcon icon={faGear} />Settings
+                    <div><FontAwesomeIcon className='h-5 pr-4' icon={faCalendar} />Calendar
                     </div>
-                    <div><FontAwesomeIcon icon={faCalendar} />Calendar
+                    <div><FontAwesomeIcon className='h-pr-4 pr-4' icon={faGraduationCap} />Acadmic
                     </div>
-                    <div><FontAwesomeIcon icon={faGraduationCap} />Acadmic
-                    </div>
-                    <div><FontAwesomeIcon icon={faBoxArchive} />Archive
+                    <div><FontAwesomeIcon className='h-5 pr-4' icon={faBoxArchive} />Archive
                     </div>
                 </div>}
 
