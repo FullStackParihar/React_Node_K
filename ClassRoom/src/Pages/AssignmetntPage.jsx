@@ -6,7 +6,7 @@ import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import { useToggle } from '../Context/ToggleContext';
 
 const AssignmetntPage = () => {
-        const { toggle, toggleValue } = useToggle();
+    const { toggle, toggleValue } = useToggle();
     return (
         <>
             <div className="">
@@ -16,12 +16,11 @@ const AssignmetntPage = () => {
                 </div>
                 {/* Sidebar */}
                 <div className={`fixed items-center top-[75px] left-0 h-full z-10 ${toggle ? 'w-20' : 'w-44'} border-r-2 bg-white p-4 hidden lg:block `} >
-                <SideBar />
-            </div>
+                    <SideBar />
+                </div>
 
             </div>
             <div className="w-full flex justify-center gap-8 mt-4 px-12 py-8 sm:mt-20" >
-
                 <div>
                     <img
                         src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2152752573/settings_images/d6552f4-741-40ce-2e61-1b5d35300b8_eot-icon-studies.jpg"
