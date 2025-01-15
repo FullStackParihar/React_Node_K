@@ -59,7 +59,6 @@ const AssignmetntPage = () => {
                     <div className="bg-white border-2 p-4 rounded-lg w-[20rem] h-40 shadow-md mb-2 col-span-1 flex flex-col gap-2 hidden lg:flex sm:flex">
                         <div className="flex justify-between w-auto items-center">
                             <div className="flex items-center gap-2">
-
                                 <h1>Your Work</h1>
                             </div>
                             <div>
