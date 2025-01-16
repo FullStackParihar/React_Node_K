@@ -11,7 +11,7 @@ import { useToggle } from "../Context/ToggleContext";
 const InnerPage = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
- const { toggle, toggleValue } = useToggle();
+  const { toggle, toggleValue } = useToggle();
   useEffect(() => {
     // Find the matched product
     const matchedProduct = products.find(
@@ -38,11 +38,11 @@ const InnerPage = () => {
           <div className="w-20 h-[3px] bg-blue-500 relative top-[18px] rounded"></div>
         </div>
         <div className="hover:bg-blue-100 py-3 w-20 h-14">
-          <a
+          <Link to="/assignment"> <a
             href="#"
             className="text-blue-600 hover:no-underline relative left-[8px]">
             Classwork
-          </a>
+          </a></Link>
           <div className="w-20 h-[3px] bg-blue-500 relative top-[18px] rounded"></div>
         </div>
         <div className="hover:bg-blue-100 py-3 w-20 h-14">
@@ -61,8 +61,8 @@ const InnerPage = () => {
 
       {/* Sidebar */}
       <div className={`fixed items-center top-[75px] left-0 h-full z-10 ${toggle ? 'w-20' : 'w-44'} border-r-2 bg-white p-4 duration-300 hidden lg:block`} >
-                <SideBar />
-            </div>
+        <SideBar />
+      </div>
 
       <div className="md:pl-34 p-4">
         {/* Main Image */}

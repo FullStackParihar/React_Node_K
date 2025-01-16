@@ -49,8 +49,6 @@ const SideBar = () => {
                     <div className='flex'>
                     <h2 className='px-2 bg-black text-white rounded-full'>C</h2>
                     <li>C Logical</li></div>
-                         
-                        
                     </ul>
                     </div>
                     <div><FontAwesomeIcon className='h-5 pr-4' icon={faBoxArchive} />Archive
