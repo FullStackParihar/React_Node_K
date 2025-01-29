@@ -82,7 +82,7 @@ const CardComponent = ({ contacts }) => {
                     productList.map((product) => (
                         <div
                             key={product.id}
-                            className="w-[20rem] bg-gradient-to-br from-purple-50 to-purple-100 animate-pulse shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+                            className="w-[20rem] bg-gradient-to-br from-purple-50 to-purple-100 animate-pulse shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300"
                         >
 
                             <h2 className="w-full h-44 object-contain bg-white"></h2>

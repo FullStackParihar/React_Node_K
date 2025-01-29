@@ -5,8 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import Form from './Form';
+import { useEffect, useState } from 'react';
 
 const Main = () => {
+
+
+
+  const [isLoaded, setIsLoaded] = useState(true);
+  useEffect(() => {
+
+    const timer = setTimeout(() => setIsLoaded(false), 3000);
+    return () => clearTimeout(timer);
+  },
+    []);
+
   return (
     <>
 
@@ -44,11 +56,11 @@ const Main = () => {
       <div className=" fixed top-50% right-0 flex flex-col h-36 z-50  ">
         <button className="bg-gradient-to-r from-purple-500 to-purple-700 text-white text-m py-4 px-6 rounded-full border-2 flex items-center gap-2">
           <FontAwesomeIcon icon={faHeart} className="text-red-500" />
-          
+
         </button>
         <button className="bg-white text-purple text-m py-4 px-6 rounded-full border-2 flex items-center gap-2">
           <FontAwesomeIcon icon={faShoppingCart} className="text-purple" />
-          
+
         </button>
 
       </div>
@@ -64,32 +76,55 @@ const Main = () => {
       <div className="px-4 py-6 flex justify-center items-center bg-gray-100">
 
         <div className="flex flex-wrap justify-center gap-6 ">
-          {products.slice(0, 6).map((product, index) => (
-            <div
-              key={index}
-              className="w-full sm:w-48 bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow hover:scale-105 hover:shadow-2xl transition-transform duration-300"
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-36 object-100% rounded-t-md"
-              />
-              <h4 className="text-base font-medium mt-2 text-gray-800">{product.name}</h4>
-              <p className="text-sm text-gray-600 mt-1">Price: {product.price}</p>
-              <a
-                href="#"
-                className="text-indigo-600 text-sm font-semibold mt-2 inline-block hover:underline"
+          {isLoaded ?
+
+            products.slice(0, 6).map((product) => (
+              <div
+
+                className="w-full sm:w-48 bg-white rounded-lg shadow-md p-4 animate-pulse transition-transform duration-300"
               >
-                View Details
-              </a>
+                <h2 className='h-44'></h2>
+                <div className='bg-purple-100 w-full p-6'>
 
-            </div>
+                  <h4 className="text-base font-medium mt-2 text-gray-800"> </h4>
+                  <p className="text-sm text-gray-600 mt-1"> </p>
+                  <a
+                    href="#"
+                    className="text-indigo-600 text-sm font-semibold mt-2 inline-block hover:underline"
+                  >
 
-          ))}
+                  </a></div>
+              </div>
+
+            ))
+            : products.slice(0, 6).map((product, index) => (
+              <div
+                key={index}
+                className="w-full sm:w-48 bg-white rounded-lg shadow-md  hover:shadow-lg transition-shadow hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-44 p-2 object-100% rounded-t-md"
+                />
+                <div className='bg-purple-100 w-full p-4'>  <h4 className="text-base font-medium mt-2 text-gray-800">{product.name}</h4>
+                  <p className="text-sm text-gray-600 mt-1">Price: {product.price}</p>
+                  <a
+                    href="#"
+                    className="text-indigo-600 text-sm font-semibold mt-2 inline-block hover:underline"
+                  >
+                    View Details
+                  </a>
+                </div>
+
+
+              </div>
+
+            ))}
         </div>
-         
+
       </div>
-      <Form/>
+      <Form />
     </>
   );
 };
