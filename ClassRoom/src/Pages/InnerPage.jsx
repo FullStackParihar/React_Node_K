@@ -101,7 +101,7 @@ const InnerPage = () => {
                 </button>
               </div>
               <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
-                Join
+                <a href="https://meet.google.com/xsw-sgnp-ovz?authuser=0&hs=179"> Join</a>
               </button>
             </div>
             <div className="bg-white border-2 rounded-lg w-52 shadow-md p-4 col-span-1">
