@@ -175,7 +175,7 @@ const CardComponent = ({ contacts }) => {
                                         }}
                                     >
                                         {product.isWishlist === true
-                                            ? "Remove from Wishlist"
+                                            ? "Remove from Wishlist" 
                                             : "Add to Wishlist"}
                                     </button>
                                 </div>
